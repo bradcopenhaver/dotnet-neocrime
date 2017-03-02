@@ -16,6 +16,7 @@ namespace NEOCrime
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()
+                .UseUrls(args[0])
                 .Build();
 
             host.Run();
